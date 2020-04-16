@@ -2750,8 +2750,8 @@ class PadToFixedSize(meta.Augmenter):
 
         # set these to None to use the same values as sampled for the
         # images (not tested)
-        self._pad_mode_heatmaps = "constant"
-        self._pad_mode_segmentation_maps = "constant"
+        self._pad_mode_heatmaps = "symmetric"
+        self._pad_mode_segmentation_maps = "symmetric"
         self._pad_cval_heatmaps = 0.0
         self._pad_cval_segmentation_maps = 0
 
